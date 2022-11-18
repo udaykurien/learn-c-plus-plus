@@ -44,7 +44,7 @@ int main () {
    std::cout << "cout with auto null character terminated string: " << std::endl;
    char message_1[20] ={'H','e','l','l','o'}; // null character autofilled in contrast to char message[5] {'H','e','l','l','o} or char message[] {'H','e','l','l','o} where the null char isnt autfilled because the compiler believes that you explicitly have stated that the size of the array is exactly 5 char long (Hello) and therefore there isn't a 6th position to add the null char to.
    std::cout  << message_1 << std::endl;
-   std::cout << "Sixe of string (wihtout null char): " << std::size(message_1) << std::endl; 
+   std::cout << "Size of string (wihtout null char): " << std::size(message_1) << std::endl; 
 
    // cout with null character terminated string
    std::cout << std::endl;
