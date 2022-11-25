@@ -21,8 +21,12 @@ int main() {
    std::cout << "The address contained in pointer p_char_var is: " << p_char_var << ". And the value contained in p_char_var: " << *p_char_var << std::endl;
    std::cout << std::endl;
 
-   //char *p_message {"Hello World"}; // Pointer points to first element of char array that represents the string. In this case its H.
-   // some versioins of c++ will try to expand the literal as an array of constant characters (const char)
+    const char *message {"Hello World!"};
+    std::cout << "message: " << message << std::endl;
+    std::cout << "&message: " << &message << std::endl;
+    std::cout << "*message: " << *message << std::endl;
+   //char *p_message {"Hello World"}; 
+   // some versioins of c++ will try to expand the above literal as an array of constant characters (const char)
    // in that case there will be a type mis-match between the char array type (const char) and the pointer type (char).
    // Because of this mismatch we'll get a compiler error
    // The compiler throws an error because pointers can be used to modify arrays
