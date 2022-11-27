@@ -43,7 +43,7 @@ int main() {
    /*
    How do we solve the problem of dangling pointers?
    - Initialize your pointers.
-   - Reseat pointers after delete (eg. to nullptr).
+   - Reset pointers after delete (eg. to nullptr).
    - For multiple pointers to same address, make sure the owner/master pointer is very clear / known to other developers. All other slave pointers will not be tasked with releasing the memory.
    */
    
