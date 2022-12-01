@@ -11,6 +11,11 @@
 #include <iostream>
 #include "compare.h" //Include header file with declarations for max, min
                     // Pre-processor copies contents of compare.h over here
+#include "operations.h"
+
+//include convention
+// #include "fname.h" - your own headers
+// #inclde <name> - headers for standard libraries
 
 int main() {
     /*
@@ -22,6 +27,9 @@ int main() {
    
    int min_num = min(134,56);
    std::cout << "min: " << min_num << std::endl;
+
+   int result = incr_mult(4,5);
+   std::cout << "incr_mult: " << result << std::endl;
 
    return 0;
 }
