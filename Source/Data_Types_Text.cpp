@@ -28,6 +28,7 @@ int main()
     std::cout << "value: " << value << std::endl;
     std::cout << "int(value): " << static_cast<int>(value) <<std::endl;
     std::cout << "value+32: " << value+32 <<std::endl;
+    std::cout << "static_cast<char>(value): " << static_cast<char>(value) <<std::endl;
     std::cout << "char value2 = value + 32: " << value2 << std::endl;
 
     return 0;
