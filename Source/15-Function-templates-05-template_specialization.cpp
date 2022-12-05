@@ -28,6 +28,7 @@ int main () {
     [return-type]   [func-name] [argument-type] [parameters]
 
     [func-name] : should be same in function template & function specializaton
+    [argument-type] : the specific argument type for which we want the compiler to use a specialized template. 
     */
 
     int a{10},b{23};
