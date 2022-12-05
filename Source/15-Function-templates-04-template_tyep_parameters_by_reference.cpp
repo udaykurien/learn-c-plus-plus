@@ -2,22 +2,24 @@
 
 template <typename T> const T max_pass_by_val(const T a, const T b);      //Pass by value
 template <typename T> const T& max_pass_by_ref(const T& a, const T& b);    //Pass by reference (&)
+//references in max_pass_by_value are const to prevent accidental changes to it, as it can modify the original arguments. This is good programming pracice
 
 /*
 Also valid prototypes:
 template <typename T> T max_pass_by_val(T a, T b);      //Pass by value
 template <typename T> T max_pass_by_ref(T& a, T& b);    //Pass by reference
+Not using const with pass by reference is poor programming practice, unless you intend on modifying the values
 */
 
 /*
-Don't do this, it confuses the compiler:
+// Don't do this, it confuses the compiler:
 template <typename T> T maximum(T a, T b);
 template <typename T> const T& maximum(const T& a, const T& b);
 
 //The above are examples of function template overloads
 
 int main() {
-    double max1=maximum(a,b);
+    double max1=maximum(a,b); //The compiler won't know which template to use
     return 0;
 }
 */
