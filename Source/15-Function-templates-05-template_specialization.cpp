@@ -12,7 +12,7 @@ int main () {
 
     /*
     Template specialzation (18:48:56):
-    - Feature to bypass the default mechanism of how function templates work.
+    - Feature to bypass the default mechanism of how function templates work.(Used when usual function template is not meeting our needs, eg. with pointers)
     - Usually the compiler generates a function instance from the function template, based on the function call.
     - However, when the compiler encounters a function call with argument types that matches a template specialization, it will preferentially use the template specialization, instead of generation a function instance from the usual function template.
 
