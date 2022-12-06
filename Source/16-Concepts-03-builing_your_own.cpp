@@ -11,7 +11,7 @@
     // Syntax 2
     template <typename T>
     concept Multipliable = requires (T a, T b) {
-        a*b; // Just makes sure syntax is valid (does check the value of a*b)
+        a*b; // Just makes sure syntax is valid (does not check the value of a*b)
         // Over here we have just one contraint, but we could additional constraints if we wanted
     };
 
