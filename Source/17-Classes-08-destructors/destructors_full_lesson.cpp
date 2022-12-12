@@ -93,6 +93,8 @@ Final thoughts:
 - A destructor is a special method that is called when an object dies.
 - It is called when the scope of a function, in which the object exists, is terminated.
 - It is called when the pointer to an object declared in the heap is explicitly deleted using the delete keyword.
+- It is also called when an object is passed by value to a function
+- And when a local object is returned from a function (for some compilers)
 
 */
 
