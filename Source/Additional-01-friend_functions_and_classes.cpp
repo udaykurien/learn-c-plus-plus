@@ -1,3 +1,5 @@
+// reference : https://www.youtube.com/watch?v=KXDzBglp83M
+
 #include <iostream>
 
 class ShapeSquare{
