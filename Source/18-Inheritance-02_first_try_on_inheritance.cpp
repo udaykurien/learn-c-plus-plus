@@ -5,48 +5,6 @@
 class Person; // Forward declaration of parent class
 class Player; // Forward declaration of inheritted class
 
-int main () {
-
-    /*
-    Your first try on inheritance (22:56:02):
-    Reminder of inheritance:
-                    Class person               |
-                     ___|___                   | INHERITANCE TREE
-                 ___/       \___               | (from Person to Engineer & Doctor)
-             ___/               \___           |
-            /                       \         \|/
-        Class Engineer          Class Doctor   '
-
-    Classes Engineer and Doctor are new classes, but they inherit the methods and member variables of the Parent Class Person.
-
-    Assignment for this lectures:
-    1. Set up a base/parent class - Person, containing last_name, first_name.
-    2. Set up an inherited class - Player, that inherits from Person, but also adds member variable m_game.
-
-    Parent Class          Inherited Class
-    [PERSON]       ->     [PLAYER]
-    --------              --------
-    <last_name>           [PERSON]
-    <first_name>          <m_game>
-
-    Notes:
-    - With public inheritance, derived classes can access and use public members of the base class, but the derived class can't directly access private members.
-    - The same also applies to friends of the derived class. They hae access to private members of derived class, but don't have access to the base class.
-    
-    */
-   Player p1("baskeball");
-   std::cout << p1.get_first_name() << " " 
-   << p1.get_last_name() << std::endl;
-
-   std::cout << std::endl;
-
-   std::cout << "p1: " << p1 << std::endl;
-
-//    std::cout << "player: " << p1 << std::endl;
-
-    return 0;
-
-}
 
 
 // Class Declarations/Headers
@@ -119,3 +77,45 @@ std::ostream& operator << (std::ostream& out, Player& player){
 }
 
 
+int main () {
+
+    /*
+    Your first try on inheritance (22:56:02):
+    Reminder of inheritance:
+                    Class person               |
+                     ___|___                   | INHERITANCE TREE
+                 ___/       \___               | (from Person to Engineer & Doctor)
+             ___/               \___           |
+            /                       \         \|/
+        Class Engineer          Class Doctor   '
+
+    Classes Engineer and Doctor are new classes, but they inherit the methods and member variables of the Parent Class Person.
+
+    Assignment for this lectures:
+    1. Set up a base/parent class - Person, containing last_name, first_name.
+    2. Set up an inherited class - Player, that inherits from Person, but also adds member variable m_game.
+
+    Parent Class          Inherited Class
+    [PERSON]       ->     [PLAYER]
+    --------              --------
+    <last_name>           [PERSON]
+    <first_name>          <m_game>
+
+    Notes:
+    - With public inheritance, derived classes can access and use public members of the base class, but the derived class can't directly access private members.
+    - The same also applies to friends of the derived class. They hae access to private members of derived class, but don't have access to the base class.
+    
+    */
+   Player p1("baskeball");
+   std::cout << p1.get_first_name() << " " 
+   << p1.get_last_name() << std::endl;
+
+   std::cout << std::endl;
+
+   std::cout << "p1: " << p1 << std::endl;
+
+//    std::cout << "player: " << p1 << std::endl;
+
+    return 0;
+
+}
